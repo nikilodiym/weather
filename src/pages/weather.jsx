@@ -69,7 +69,7 @@ const Weather = () => {
           value={inputValue}
           onChange={handleInputChange}
         />
-        <button>Знайти</button>
+        <button>Find</button>
       </form>
       <div
         style={{ margin: "0, auto", marginTop: "38px" }}

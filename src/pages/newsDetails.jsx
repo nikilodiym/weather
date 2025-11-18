@@ -15,7 +15,6 @@ const NewsDetails = () => {
         (item) => item.title === params
       );
 
-      // Перевірка чи існує елемент в масиві перед встановленням його в стан
       if (filteredNews.length > 0) {
         setDetailsNews(filteredNews[0]);
       } else {
@@ -37,9 +36,9 @@ const NewsDetails = () => {
 
   return (
     <div>
-      <h1>{detailsNews.title}</h1>
+      <h1 style={{marginTop: "50px"}}>{detailsNews.title}</h1>
       <p>{detailsNews.content}</p>
-      <img src={detailsNews.urlToImage} alt={detailsNews.title} />
+      <img src={detailsNews.urlToImage} alt={detailsNews.title} style={{marginBottom: "50px", marginTop: "50px"}} />
     </div>
   );
 };

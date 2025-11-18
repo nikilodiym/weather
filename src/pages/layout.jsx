@@ -3,6 +3,8 @@ import Header from "../components/header";
 import { Outlet } from "react-router-dom";
 import { useAPP } from "../utils/context";
 import { dark_mode, light_mode } from "../utils/theme_style";
+import Footer from "../components/footer";
+
 
 const Layout = () => {
   const { isDarkMode } = useAPP();
@@ -13,7 +15,8 @@ const Layout = () => {
     <div style={{ ...currentTheme.app_box, minHeight: "100vh" }}>
       <Header />
       <Outlet />
-      <footer>footer</footer>
+      {/* <footer>footer</footer> */}
+      <Footer />
     </div>
   );
 };

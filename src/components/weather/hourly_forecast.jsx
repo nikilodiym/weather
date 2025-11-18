@@ -55,8 +55,8 @@ const Hourly_forecast = () => {
         textAlign: "center",
       }}
     >
-      <h1 style={{ fontSize: "2vw", width: "100%" }}>
-        Погодиний прогноз на {date}
+      <h1 style={{ fontSize: "2vw", width: "100%", marginBottom: "3vh" }}>
+        Hourly forecast for {date}
       </h1>
       <ul style={{ display: "flex", width: "auto" }}>
         {forecastData?.map((item) => (
@@ -105,7 +105,7 @@ const Hourly_forecast = () => {
               }}
             >
               {Math.round(item.wind_kph)} <br />
-              <span style={{ fontWeight: 300, fontSize: "12px" }}>км/год</span>
+              <span style={{ fontWeight: 300, fontSize: "12px" }}>km/h</span>
             </p>
           </li>
         ))}

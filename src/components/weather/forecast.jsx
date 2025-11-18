@@ -28,7 +28,7 @@ const Forecast = () => {
       className={`${s.container} ${s.current_container}`}
       style={{ display: "block", height: "auto", width: "18vw" }}
     >
-      <h1 style={{ fontSize: "2vw" }}>Погноз на 5 днів</h1>
+      <h1 style={{ fontSize: "2vw" }}>5-day forecast</h1>
       <ul>
         {forecastData?.map((item) => (
           <li

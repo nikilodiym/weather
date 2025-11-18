@@ -40,7 +40,7 @@ const News = () => {
           value={inputValue}
           onChange={handleInputChange}
         />
-        <button>Знайти</button>
+        <button>Find</button>
       </form>
       <div className={s.articlesContainer}>
         {newsData.articles ? (
@@ -63,7 +63,7 @@ const News = () => {
             );
           })
         ) : (
-          <h1>Такої новини немає!!!</h1>
+          <h1>There is no such news!!!</h1>
         )}
       </div>
     </div>

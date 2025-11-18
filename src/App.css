@@ -14,6 +14,7 @@
 .main_container {
   width: 92%;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .forecast_container {
   display: flex;

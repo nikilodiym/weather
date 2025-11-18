@@ -18,7 +18,7 @@ const CurrentForecast = (props) => {
       <div className={s.temp_box}>
         <p className={s.temp}>{Math.round(current.temp_c)}°C</p>
         <p>
-          Відчувається, як:
+          It feels like:
           <br />{" "}
           <span className={s.temp_feel}>
             {Math.round(current.feelslike_c)} °C

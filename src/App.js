@@ -16,7 +16,7 @@ function App() {
     <AppProvider>
       <div className="App">
         {/* <Header /> */}
-        learn react
+        {/* learn react */}
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Main />} />
