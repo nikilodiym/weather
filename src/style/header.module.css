@@ -2,79 +2,49 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1280px;
-  padding: 0 50px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 18px 26px;
+  border-radius: 22px;
+  background: linear-gradient(120deg, rgba(36, 46, 86, 0.7), rgba(8, 10, 20, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.45);
+  position: sticky;
+  top: 12px;
+  backdrop-filter: blur(12px);
+  z-index: 5;
 }
+
 .logo {
-  font-size: 56px;
-  margin-right: 50px;
-}
-.frame {
-  align-items: center;
-  background-color: var(--a);
-  display: flex;
-  gap: 316px;
-  height: 100px;
-  justify-content: center;
-  position: relative;
-  width: 1440px;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #e8eefc;
 }
 
-.div {
+.nav {
+  display: flex;
   align-items: center;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 85px;
-  justify-content: center;
-  position: relative;
+  gap: 20px;
 }
 
-.div2 {
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 20px;
+.themeToggle {
   display: flex;
+  align-items: center;
   gap: 10px;
-  height: 56px;
-  padding: 0px 0px 0px 25px;
-  position: relative;
-  width: 438px;
-}
-
-.textWrapper {
-  color: #292d32;
-  font-family: "Poppins-Regular", Helvetica;
+  color: #e8eefc;
   font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  position: relative;
-  width: fit-content;
 }
 
-.divWrapper {
-  align-items: center;
-  background-color: var(--b);
-  border-radius: 20px;
-  display: flex;
-  gap: 10px;
-  height: 56px;
-  justify-content: center;
-  left: 306px;
-  position: absolute;
-  top: 0;
-  width: 132px;
-}
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
 
-.textWrapper2 {
-  color: #054a83;
-  font-family: "Poppins-SemiBold", Helvetica;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
-  position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 5px 10px;
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+  }
 }

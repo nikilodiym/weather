@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #05060f;
+  background-image: radial-gradient(circle at 20% 20%, #0f1a32 0, rgba(5, 6, 15, 0.6) 40%),
+    radial-gradient(circle at 80% 0%, rgba(111, 243, 197, 0.18), rgba(5, 6, 15, 0.75) 55%),
+    radial-gradient(circle at 50% 80%, rgba(127, 208, 255, 0.2), rgba(5, 6, 15, 0.9) 60%);
+  background-attachment: fixed;
+  color: #e8eefc;
 }
 
 code {
@@ -22,5 +28,5 @@ code {
 
 a {
   text-decoration: none;
-  color: rgb(14, 14, 14);
+  color: #e8eefc;
 }

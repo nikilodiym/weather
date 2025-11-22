@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useAPP } from "../utils/context";
 import { WEATHER_PROFILE } from "../utils/db_prifile";
-import s from "../style/news.module.css";
 import DateLocation from "../components/weather/date_location";
 import "../App.css";
 import CurrentForecast from "../components/weather/current_forecast";
@@ -60,30 +59,40 @@ const Weather = () => {
   }
 
   return (
-    <div className="main_container">
-      <form onSubmit={onFormSubmit}>
-        <input
-          type="text"
-          className={s.searchInput}
-          placeholder="What you want?"
-          value={inputValue}
-          onChange={handleInputChange}
-        />
-        <button>Find</button>
-      </form>
-      <div
-        style={{ margin: "0, auto", marginTop: "38px" }}
-        className="forecast_container"
-      >
-        <DateLocation location={weather.location} />
-        <CurrentForecast current={weather.current} />
-      </div>
-      <div
-        style={{ margin: "0, auto", marginTop: "28px" }}
-        className="forecast_container"
-      >
-        <Forecast />
-        <Hourly_forecast />
+    <div className="weather-page">
+      <div className="weather-shell">
+        <div className="weather-hero">
+          <div className="hero-copy">
+            <p className="hero-kicker">Живий прогноз</p>
+            <h1 className="hero-title">
+              Свіжа погода з атмосферним виглядом
+            </h1>
+            <p className="hero-subtitle">
+              Швидкий пошук міст, щогодинні дані та 5-денний прогноз у темній
+              обгортці.
+            </p>
+          </div>
+          <form onSubmit={onFormSubmit} className="search-form">
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Введи місто, наприклад: Lviv"
+              value={inputValue}
+              onChange={handleInputChange}
+            />
+            <button className="search-btn">Знайти</button>
+          </form>
+        </div>
+
+        <div className="forecast_container forecast-row">
+          <DateLocation location={weather.location} />
+          <CurrentForecast current={weather.current} />
+        </div>
+
+        <div className="forecast_container forecast-row secondary">
+          <Forecast />
+          <Hourly_forecast />
+        </div>
       </div>
     </div>
   );

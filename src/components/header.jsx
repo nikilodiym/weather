@@ -19,8 +19,13 @@ const Header = () => {
   return (
     <header className={s.header}>
       <div className={s.logo}>Maxvel</div>
-      <Navigation />
-      <Switch onChange={toogleTheme} />
+      <div className={s.nav}>
+        <Navigation />
+      </div>
+      <div className={s.themeToggle}>
+        <span>Темна</span>
+        <Switch onChange={toogleTheme} />
+      </div>
     </header>
   );
 };

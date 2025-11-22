@@ -63,13 +63,7 @@ const Hourly_forecast = () => {
           // console.log(item),
           <li
             key={item.date}
-            style={{
-              width: "10vw",
-              backgroundColor: "grey",
-              marginRight: "1vw",
-              borderRadius: "10px",
-              padding: "10px 15px",
-            }}
+            className="hourly-card"
           >
             <p style={{ fontSize: "18px" }}>{formattedTime(item.time)}</p>
 
